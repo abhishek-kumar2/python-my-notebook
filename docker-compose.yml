@@ -1,0 +1,10 @@
+version: '3'
+services:
+  jupyter:
+    image: my-python-jupyter-image
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./my-notebooks:/app
+    environment:
+      - JUPYTER_TOKEN=root
